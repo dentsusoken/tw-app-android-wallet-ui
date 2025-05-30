@@ -42,7 +42,7 @@ local.properties
 captures/
 
 # Sign key
-sign
+# sign
 
 #fastlane
 .env.demo
