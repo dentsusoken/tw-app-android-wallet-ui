@@ -89,40 +89,12 @@ class AddDocumentInteractorImpl(
         flow {
             val options = mutableListOf(
                 DocumentOptionItemUi(
-                    text = DocumentIdentifier.PID.toUiName(resourceProvider),
-                    icon = AppIcons.Id,
-                    type = DocumentIdentifier.PID,
-                    available = true
-                ),
-                DocumentOptionItemUi(
                     text = DocumentIdentifier.MDL.toUiName(resourceProvider),
                     icon = AppIcons.Id,
                     type = DocumentIdentifier.MDL,
                     available = true
-                ),
-                DocumentOptionItemUi(
-                    text = DocumentIdentifier.AGE.toUiName(resourceProvider),
-                    icon = AppIcons.Id,
-                    type = DocumentIdentifier.AGE,
-                    available = canCreateExtraDocument(flowType)
-                ),
-                DocumentOptionItemUi(
-                    text = DocumentIdentifier.PHOTOID.toUiName(resourceProvider),
-                    icon = AppIcons.Id,
-                    type = DocumentIdentifier.PHOTOID,
-                    available = canCreateExtraDocument(flowType)
                 )
             )
-            if (flowType == IssuanceFlowUiConfig.NO_DOCUMENT) {
-                options.add(
-                    DocumentOptionItemUi(
-                        text = DocumentIdentifier.SAMPLE.toUiName(resourceProvider),
-                        icon = AppIcons.Id,
-                        type = DocumentIdentifier.SAMPLE,
-                        available = true
-                    )
-                )
-            }
             emit(
                 AddDocumentInteractorPartialState.Success(
                     options = options
