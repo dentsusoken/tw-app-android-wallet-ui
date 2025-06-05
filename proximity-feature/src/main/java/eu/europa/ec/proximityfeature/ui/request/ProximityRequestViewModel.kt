@@ -66,30 +66,32 @@ class ProximityRequestViewModel(
 
     override fun getNextScreen(): String {
         return generateComposableNavigationLink(
-            screen = CommonScreens.Biometric,
-            arguments = generateComposableArguments(
-                mapOf(
-                    BiometricUiConfig.serializedKeyName to uiSerializer.toBase64(
-                        BiometricUiConfig(
-                            title = viewState.value.screenTitle.plainText,
-                            subTitle = resourceProvider.getString(R.string.loading_biometry_share_subtitle),
-                            quickPinOnlySubTitle = resourceProvider.getString(R.string.loading_quick_pin_share_subtitle),
-                            isPreAuthorization = false,
-                            shouldInitializeBiometricAuthOnCreate = true,
-                            onSuccessNavigation = ConfigNavigation(
-                                navigationType = NavigationType.PushScreen(ProximityScreens.Loading)
-                            ),
-                            onBackNavigationConfig = OnBackNavigationConfig(
-                                onBackNavigation = ConfigNavigation(
-                                    navigationType = NavigationType.PopTo(ProximityScreens.Request),
-                                ),
-                                hasToolbarCancelIcon = true
-                            )
-                        ),
-                        BiometricUiConfig.Parser
-                    ).orEmpty()
-                )
-            )
+            screen = ProximityScreens.Loading,
+            arguments = ""
+            // screen = CommonScreens.Biometric,
+            // arguments = generateComposableArguments(
+                // mapOf(
+                //     BiometricUiConfig.serializedKeyName to uiSerializer.toBase64(
+                //         BiometricUiConfig(
+                //             title = viewState.value.screenTitle.plainText,
+                //             subTitle = resourceProvider.getString(R.string.loading_biometry_share_subtitle),
+                //             quickPinOnlySubTitle = resourceProvider.getString(R.string.loading_quick_pin_share_subtitle),
+                //             isPreAuthorization = false,
+                //             shouldInitializeBiometricAuthOnCreate = true,
+                //             onSuccessNavigation = ConfigNavigation(
+                //                 navigationType = NavigationType.PushScreen(ProximityScreens.Loading)
+                //             ),
+                //             onBackNavigationConfig = OnBackNavigationConfig(
+                //                 onBackNavigation = ConfigNavigation(
+                //                     navigationType = NavigationType.PopTo(ProximityScreens.Request),
+                //                 ),
+                //                 hasToolbarCancelIcon = true
+                //             )
+                //         ),
+                //         BiometricUiConfig.Parser
+                //     ).orEmpty()
+                // )
+            // )
         )
     }
 
