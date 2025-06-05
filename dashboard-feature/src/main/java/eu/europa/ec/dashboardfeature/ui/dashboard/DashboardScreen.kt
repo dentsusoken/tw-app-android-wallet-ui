@@ -266,13 +266,10 @@ private fun Content(
                 paddingValues = paddingValues
             )
         }
-
-        if (state.allowUserInteraction) {
-            FabContent(
-                paddingValues = paddingValues,
-                onEventSend = onEventSend
-            )
-        }
+        FabContent(
+            paddingValues = paddingValues,
+            onEventSend = onEventSend
+        )
     }
 
     if (state.bleAvailability == BleAvailability.NO_PERMISSION) {

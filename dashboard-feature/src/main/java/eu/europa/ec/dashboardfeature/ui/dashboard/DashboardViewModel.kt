@@ -419,8 +419,7 @@ class DashboardViewModel(
                     }
 
                     is DashboardInteractorGetDocumentsPartialState.Success -> {
-                        val shouldAllowUserInteraction =
-                            response.mainPid is IssuedDocument
+                        val shouldAllowUserInteraction = true
 
                         val documents = response.documentsUi
                             .map { documentUi ->

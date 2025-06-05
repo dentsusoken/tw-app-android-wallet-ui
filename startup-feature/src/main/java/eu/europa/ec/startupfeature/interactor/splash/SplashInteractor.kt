@@ -78,11 +78,7 @@ class SplashInteractorImpl(
                             shouldInitializeBiometricAuthOnCreate = true,
                             onSuccessNavigation = ConfigNavigation(
                                 navigationType = NavigationType.PushScreen(
-                                    screen = if (hasDocuments) {
-                                        DashboardScreens.Dashboard
-                                    } else {
-                                        IssuanceScreens.AddDocument
-                                    },
+                                    screen = DashboardScreens.Dashboard,
                                     arguments = if (!hasDocuments) {
                                         mapOf("flowType" to IssuanceFlowUiConfig.NO_DOCUMENT.name)
                                     } else {
