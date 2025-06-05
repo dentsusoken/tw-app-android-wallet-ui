@@ -47,15 +47,23 @@ class SplashInteractorImpl(
     private val hasDocuments: Boolean
         get() = walletCoreDocumentsController.getAllDocuments().isNotEmpty()
 
-    override fun getAfterSplashRoute(): String = when (quickPinInteractor.hasPin()) {
-        true -> {
-            getBiometricsConfig()
-        }
+    override fun getAfterSplashRoute(): String = generateComposableNavigationLink(
+        screen = DashboardScreens.Dashboard,
+        arguments = generateComposableArguments(if (!hasDocuments) {
+            mapOf("flowType" to IssuanceFlowUiConfig.NO_DOCUMENT.name)
+        } else {
+            emptyMap()
+        })
+    )
+    // when (quickPinInteractor.hasPin()) {
+    //     true -> {
+    //         getBiometricsConfig()
+    //     }
 
-        false -> {
-            getQuickPinConfig()
-        }
-    }
+    //     false -> {
+    //         getQuickPinConfig()
+    //     }
+    // }
 
     private fun getQuickPinConfig(): String {
         return generateComposableNavigationLink(
