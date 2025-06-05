@@ -271,7 +271,7 @@ In the case of an additive change regarding openId4VP, you also need to update t
 
 ## Scoped Issuance Document Configuration
 
-Currently, the application supports specific docTypes for scoped issuance (On the Add Document screen the pre-configured buttons like *National ID*, *Driving License*, and *Age verification*).
+Currently, the application supports specific docTypes for scoped issuance (On the Add Document screen the pre-configured buttons like *National ID*, *mDL*, and *Age verification*).
 
 The supported list and user interface are not configurable because, with the credential offer, you can issue any format-supported document.
 
@@ -310,7 +310,7 @@ Example:
 ```Xml
 <!-- Document Types -->
 <string name="pid">National ID</string>
-<string name="mdl">Driving License</string>
+<string name="mdl">mDL</string>
 <string name="age_verification">Age Verification</string>
 <string name="load_sample_data">Load Sample Documents</string>
 <string name="your_own_document_title">Your own document title</string>

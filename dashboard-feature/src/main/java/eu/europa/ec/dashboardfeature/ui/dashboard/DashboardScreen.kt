@@ -851,7 +851,7 @@ private fun DashboardScreenPreview() {
             ),
             DocumentUi(
                 documentId = "3",
-                documentName = "Driving License",
+                documentName = "mDL",
                 documentIdentifier = DocumentIdentifier.MDL,
                 documentExpirationDateFormatted = "25 Dec 2050",
                 documentHasExpired = false,

@@ -129,7 +129,7 @@ You will also need to download the Android Verifier app. More information can be
 5. You will be shown a success screen. Tap "Continue".
 6. You are now on the "Dashboard" screen.
 
-While on the "Dashboard" screen you can tap "Add doc" and issue a new document, e.g. "Driving License".
+While on the "Dashboard" screen you can tap "Add doc" and issue a new document, e.g. "mDL".
 
 If you want to re-issue a document, you must delete it first by tapping on it in the "Dashboard" screen and tapping the delete icon in the "Document details" view.
 

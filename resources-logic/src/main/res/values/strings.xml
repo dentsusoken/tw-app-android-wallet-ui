@@ -73,7 +73,7 @@
 
     <!-- Document Types -->
     <string name="pid">National ID</string>
-    <string name="mdl">Driving License</string>
+    <string name="mdl">mDL</string>
     <string name="age_verification">Age Verification</string>
     <string name="load_sample_data">Load Sample Documents</string>
     <string name="photo_id">Photo ID</string>

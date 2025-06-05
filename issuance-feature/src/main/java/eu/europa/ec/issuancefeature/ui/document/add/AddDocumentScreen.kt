@@ -298,7 +298,7 @@ private fun IssuanceAddDocumentScreenPreview() {
                         available = true,
                     ),
                     DocumentOptionItemUi(
-                        text = "Driving License",
+                        text = "mDL",
                         icon = AppIcons.Id,
                         type = DocumentIdentifier.MDL,
                         available = false,
@@ -331,7 +331,7 @@ private fun DashboardAddDocumentScreenPreview() {
                         available = true,
                     ),
                     DocumentOptionItemUi(
-                        text = "Driving License",
+                        text = "mDL",
                         icon = AppIcons.Id,
                         type = DocumentIdentifier.MDL,
                         available = false,

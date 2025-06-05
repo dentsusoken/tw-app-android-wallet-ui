@@ -46,7 +46,7 @@ object TestsData {
     const val mockedUserFirstName = "JAN"
     const val mockedUserBase64Portrait = "SE"
     const val mockedDocUiNamePid = "National ID"
-    const val mockedDocUiNameMdl = "Driving License"
+    const val mockedDocUiNameMdl = "mDL"
     const val mockedDocUiNameAge = "Age Verification"
     const val mockedDocUiNamePhotoId = "Photo ID"
     const val mockedDocUiNameSampleData = "Load Sample Documents"
