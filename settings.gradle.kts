@@ -37,7 +37,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "EUDI Wallet"
+rootProject.name = "DI Wallet"
 include(":app")
 include(":business-logic")
 include(":ui-logic")

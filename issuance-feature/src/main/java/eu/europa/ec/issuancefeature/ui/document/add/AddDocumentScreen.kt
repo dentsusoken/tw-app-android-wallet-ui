@@ -289,7 +289,7 @@ private fun IssuanceAddDocumentScreenPreview() {
             state = State(
                 navigatableAction = ScreenNavigateAction.NONE,
                 title = "Add document",
-                subtitle = "Select a document to add in your EUDI Wallet",
+                subtitle = "Select a document to add in your DI Wallet",
                 options = listOf(
                     DocumentOptionItemUi(
                         text = "National ID",
@@ -322,7 +322,7 @@ private fun DashboardAddDocumentScreenPreview() {
             state = State(
                 navigatableAction = ScreenNavigateAction.CANCELABLE,
                 title = "Add document",
-                subtitle = "Select a document to add in your EUDI Wallet",
+                subtitle = "Select a document to add in your DI Wallet",
                 options = listOf(
                     DocumentOptionItemUi(
                         text = "National ID",
